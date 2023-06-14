@@ -28,5 +28,31 @@ else:
     print("You can only watch U rated movies")
 ```
 
+## Loops 
+
+There are for and while loops.
+Loops are iterative and cycle through data. 
+
+### For loop
+The layout is for num in variable. It iterates over each number (num). 
 
 
+Example for loop:
+```python
+for num in list_data:
+    print(num * 2)
+```
+You can have for loops within for loops for embedded lists:
+```python
+for data in embedded_lists:
+    print(data)
+    for num in data:
+        print(num)
+```
+And in dictionaries:
+
+```python
+for item in dict_data.values():
+    for embed_value in item.values():
+        print(embed_value)
+```
