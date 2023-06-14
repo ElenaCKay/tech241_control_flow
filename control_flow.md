@@ -56,3 +56,16 @@ for item in dict_data.values():
     for embed_value in item.values():
         print(embed_value)
 ```
+
+### While loops
+
+Monitors a condition to see if it is still the case.
+Example: 
+```python
+x = 0
+
+while x < 10:
+    print(f"it's working -> {x}")
+    x += 1
+```
+

@@ -4,8 +4,14 @@
 # Conditional statements
 
 # Check an age and see if the person can watch a film
+user_prompt = True
 
-age = input("What is your age?  ").lower()
+while user_prompt:
+    age = input("What is your age? ")
+    if age.isdigit() and 0 < int(age) < 120:
+        user_prompt = False
+    else:
+        print("Please enter your age as a digit and under 120")
 
 number_age = int(age)
 
